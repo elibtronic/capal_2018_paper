@@ -1,0 +1,5 @@
+#!/bin/bash
+for f in "TEXT/*"
+do
+	wc -w $f | awk '{print $1}'
+done
